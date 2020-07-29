@@ -899,6 +899,13 @@ p.user-story-name {
   p.user-story-name {
     width: 60px;
   }
+  .add-story-icon {
+      bottom: 6px;
+      right: 6px;
+      height: 16px;
+      width: 16px;
+      font-size: 1.3rem;
+  }
 }
 
 /* stories styles end */
