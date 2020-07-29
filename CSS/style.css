@@ -822,7 +822,7 @@ body {
 img.user-story-img {
   height: 80px;
   width: 80px;
-  background: grey;
+  background: lightgrey;
   border-radius: 50%;
   border: 2px solid white;
   padding: 4px;
@@ -845,17 +845,17 @@ img.user-story-img {
     position: absolute;
     font-weight: 500;
     color: white;
-    bottom: 4px;
-    right: 4px;
+    bottom: 8px;
+    right: 8px;
     background: rgb(0, 136, 255);
-    height: 16px;
-    width: 16px;
+    height: 20px;
+    width: 20px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
     border-radius: 50%;
     line-height: 1;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 
 }
 
