@@ -820,45 +820,47 @@ body {
 }
 
 img.user-story-img {
-  height: 80px;
-  width: 80px;
   background: lightgrey;
   border-radius: 50%;
   border: 2px solid white;
   padding: 4px;
+  width: 100%;
+  height: 100%;
+  flex: none;
 }
 
 .user-story {
-  margin: 0 2px;
+  margin: 0 5px;
   padding: 8px;
 }
 
 .user-story-img-div {
   border-radius: 50%;
-  padding: 3px;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+  width: 86px;
+  height: 86px;
+  flex: none;
+  padding: 2px;
 }
 .add-story-icon {
-    position: absolute;
-    font-weight: 500;
-    color: white;
-    bottom: 8px;
-    right: 8px;
-    background: rgb(0, 136, 255);
-    height: 20px;
-    width: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    border-radius: 50%;
-    line-height: 1;
-    font-size: 1.5rem;
-
+  position: absolute;
+  font-weight: 500;
+  color: white;
+  bottom: 8px;
+  right: 8px;
+  background: rgb(0, 136, 255);
+  height: 20px;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  border-radius: 50%;
+  line-height: 1;
+  font-size: 1.5rem;
 }
-
 
 .visited .user-story-img-div {
   background-image: linear-gradient(
@@ -870,16 +872,19 @@ img.user-story-img {
     #bc1888 100%
   );
 }
-.notvisited p.user-story-name {
-  opacity: 0.5;
-}
+
 p.user-story-name {
   text-align: center;
-  font-weight: 500;
+  font-weight: 400;
   white-space: nowrap;
   overflow: hidden;
-  width: 80px;
+  width: 100%;
   text-overflow: ellipsis;
+  width: 86px;
+}
+
+.notvisited p.user-story-name {
+  opacity: 0.5;
 }
 
 @media only screen and (max-width: 650px) {
@@ -887,24 +892,26 @@ p.user-story-name {
     padding: 5px;
     margin-bottom: 10px;
   }
-  img.user-story-img {
-    height: 60px;
-    max-width: 60px;
-    min-width: 60px;
-  }
   .user-story {
     margin: 0px 4px;
     padding: 4px;
   }
+  .user-story-img-div {
+    width: 68px;
+    height: 68px;
+    padding: 2px;
+  }
   p.user-story-name {
-    width: 60px;
+    padding: 0 2px;
+    font-size: 0.8rem;
+    width: 68px;
   }
   .add-story-icon {
-      bottom: 6px;
-      right: 6px;
-      height: 16px;
-      width: 16px;
-      font-size: 1.3rem;
+    bottom: 6px;
+    right: 6px;
+    height: 16px;
+    width: 16px;
+    font-size: 1.3rem;
   }
 }
 
@@ -965,7 +972,7 @@ img.sf-user-img {
 }
 
 .sf-user-container {
-    max-width: 125px;
+  max-width: 125px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1001,13 +1008,13 @@ p.sf-follow-btn-p {
 }
 
 .sf-cross-icon {
-    position: absolute;
-    right: 6px;
-    top: 0px;
-    color: lightgrey;
-    font-size: 1.8rem;
-    font-family: monospace;
-    cursor: pointer;
+  position: absolute;
+  right: 6px;
+  top: 0px;
+  color: lightgrey;
+  font-size: 1.8rem;
+  font-family: monospace;
+  cursor: pointer;
 }
 
 /* SuggestedFriends END */
